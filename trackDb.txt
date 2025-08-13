@@ -1,3 +1,12 @@
+# This is the single top-level composite track
+track myRNAseqHUBforUCSC
+compositeTrack on
+shortLabel My RNAseq Data
+longLabel All RNAseq datasets
+parent root
+type bigWig
+visibility full
+
 track datasetA
 compositeTrack on
 shortLabel Dataset A
@@ -6,7 +15,7 @@ type bigWig
 visibility full
 autoScale on
 maxHeightPixels 100:30:10
-parent root
+parent myRNAseqHUBforUCSC
 
     track datasetA_sample1
     parent datasetA
@@ -32,7 +41,7 @@ type bigWig
 visibility full
 autoScale on
 maxHeightPixels 100:30:10
-parent root
+parent myRNAseqHUBforUCSC
 
     track datasetB_sample3
     parent datasetB
