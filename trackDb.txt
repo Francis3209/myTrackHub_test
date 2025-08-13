@@ -1,0 +1,51 @@
+track datasetA
+compositeTrack on
+shortLabel Dataset A
+longLabel RNAseq dataset A
+type bigWig
+visibility full
+autoScale on
+maxHeightPixels 100:30:10
+parent root
+
+    track datasetA_sample1
+    parent datasetA
+    bigDataUrl https://github.com/Francis3209/myTrackHub_test/raw/main/sample1.normalizedRPKM.bw
+    shortLabel sample1
+    longLabel dataset A sample1 RNAseq bigwig format
+    type bigWig
+    color 255,0,0
+
+    track datasetA_sample2
+    parent datasetA
+    bigDataUrl https://github.com/Francis3209/myTrackHub_test/raw/main/sample2.normalizedRPKM.bw
+    shortLabel sample2
+    longLabel dataset A sample2 RNAseq bigwig format
+    type bigWig
+    color 202,21,54
+
+track datasetB
+compositeTrack on
+shortLabel Dataset B
+longLabel RNAseq Dataset B 
+type bigWig
+visibility full
+autoScale on
+maxHeightPixels 100:30:10
+parent root
+
+    track datasetB_sample3
+    parent datasetB
+    bigDataUrl https://github.com/Francis3209/myTrackHub_test/raw/main/sample3.normalizedRPKM.bw
+    shortLabel sample3
+    longLabel dataset B sample3 RNAseq bigwig format
+    type bigWig
+    color 150,60,102
+
+    track datasetB_sample4
+    parent datasetB
+    bigDataUrl https://github.com/Francis3209/myTrackHub_test/raw/main/sample4.normalizedRPKM.bw
+    shortLabel sample4
+    longLabel dataset B sample4 RNAseq bigwig format
+    type bigWig
+    color 150,60,102

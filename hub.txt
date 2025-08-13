@@ -1,0 +1,5 @@
+hub myTrackHub_test
+shortLabel My RNAseq Hub
+longLabel A collection of RNA-seq datasets from my project.
+genomesFile genomes.txt
+email francesco.gandolfi@ieo.it
