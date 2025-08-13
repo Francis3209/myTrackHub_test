@@ -3,7 +3,6 @@ track myRNAseqHUBforUCSC
 compositeTrack on
 shortLabel My RNAseq Data
 longLabel All RNAseq datasets
-parent root
 type bigWig
 visibility full
 
