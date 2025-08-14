@@ -1,20 +1,9 @@
-# This is the single top-level composite track
-track myRNAseqHUBforUCSC
-compositeTrack on
-shortLabel My RNAseq data
-longLabel All RNAseq datasets
-type bigWig
-visibility full
-configurable on
-
+# Dataset A container
 track datasetA
-compositeTrack on
-parent myRNAseqHUBforUCSC
-view signal
-shortLabel Dataset A
-longLabel RNAseq dataset A
 container multiWig
-aggregate mean
+shortLabel Dataset A
+longLabel RNAseq Dataset A
+type bigWig 0 100
 autoScale on
 maxHeightPixels 100:30:10
 
@@ -22,7 +11,7 @@ maxHeightPixels 100:30:10
     parent datasetA
     bigDataUrl https://francis3209.github.io/myTrackHub_test/sample1.normalizedRPKM.bw
     shortLabel sample1
-    longLabel dataset A sample1 RNAseq bigwig format
+    longLabel Dataset A sample1 RNAseq bigwig format
     type bigWig
     color 255,0,0
 
@@ -30,27 +19,24 @@ maxHeightPixels 100:30:10
     parent datasetA
     bigDataUrl https://francis3209.github.io/myTrackHub_test/sample2.normalizedRPKM.bw
     shortLabel sample2
-    longLabel dataset A sample2 RNAseq bigwig format
+    longLabel Dataset A sample2 RNAseq bigwig format
     type bigWig
     color 202,21,54
 
+# Dataset B container
 track datasetB
-compositeTrack on
-parent myRNAseqHUBforUCSC
-view signal
-shortLabel Dataset B
-longLabel RNAseq Dataset B 
 container multiWig
-aggregate mean
+shortLabel Dataset B
+longLabel RNAseq Dataset B
+type bigWig 0 100
 autoScale on
 maxHeightPixels 100:30:10
-
 
     track datasetB_sample3
     parent datasetB
     bigDataUrl https://francis3209.github.io/myTrackHub_test/sample3.normalizedRPKM.bw
     shortLabel sample3
-    longLabel dataset B sample3 RNAseq bigwig format
+    longLabel Dataset B sample3 RNAseq bigwig format
     type bigWig
     color 150,60,102
 
@@ -58,6 +44,6 @@ maxHeightPixels 100:30:10
     parent datasetB
     bigDataUrl https://francis3209.github.io/myTrackHub_test/sample4.normalizedRPKM.bw
     shortLabel sample4
-    longLabel dataset B sample4 RNAseq bigwig format
+    longLabel Dataset B sample4 RNAseq bigwig format
     type bigWig
     color 150,60,102
