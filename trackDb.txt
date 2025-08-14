@@ -1,6 +1,6 @@
 # Dataset A container
 track datasetA
-container multiWig
+compositeTrack on
 shortLabel Dataset A
 longLabel RNAseq Dataset A
 type bigWig 0 100
@@ -25,7 +25,7 @@ maxHeightPixels 100:30:10
 
 # Dataset B container
 track datasetB
-container multiWig
+compositeTrack on
 shortLabel Dataset B
 longLabel RNAseq Dataset B
 type bigWig 0 100
