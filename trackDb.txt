@@ -8,6 +8,7 @@ visibility full
 configurable on
 
 track datasetA
+compositeTrack on
 parent myRNAseqHUBforUCSC
 view signal
 shortLabel Dataset A
@@ -33,6 +34,7 @@ maxHeightPixels 100:30:10
     color 202,21,54
 
 track datasetB
+compositeTrack on
 parent myRNAseqHUBforUCSC
 view signal
 shortLabel Dataset B
